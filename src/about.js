@@ -34,7 +34,7 @@ export default function loadAbout() {
     missionBio.appendChild(missionBioContent);
 
     shopBioHeading.innerHTML = "Who we are";
-    ramenBioHeading.innerHTML = "Our ramen";
+    ramenBioHeading.innerHTML = "Changing this for testing";
     atmosphereBioHeading.innerHTML = "Our atmosphere";
     missionBioHeading.innerHTML = "Our mission";
 
