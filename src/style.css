@@ -99,7 +99,6 @@ nav button:hover {
 #welcome {
     width: 40%;
     background-color: white;
-    opacity: .7;
 
     padding: 2.5rem;
     border-radius: 10px;
@@ -191,6 +190,27 @@ nav button:hover {
 
 .bio-item p {
     font-family: "ichiraku text";
+}
+
+#form-container {
+    width: 40%;
+    background-color: white;
+
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: .5rem solid orange;
+    
+    text-align: center;
+    line-height: 3rem;
+
+    animation: fadeInTranslucent ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #footer {
