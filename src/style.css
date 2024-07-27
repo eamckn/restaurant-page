@@ -250,6 +250,20 @@ nav button:hover {
     flex-direction: column;
 }
 
+#form button {
+    background: orange;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+#form button:hover {
+    color: white;
+    box-shadow: 0 0 4px 4px black ;
+}
+
 #footer {
     background: black;
     display: flex;

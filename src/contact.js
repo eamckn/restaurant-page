@@ -8,8 +8,8 @@ export default function loadContact() {
     const form = document.createElement("form");
     form.setAttribute("id", "form");
 
-    const names = document.createElement("div");
-    names.setAttribute("id", "form-names")
+    const button = document.createElement("button");
+    button.innerHTML = "Submit"
 
     // Form elements
     const firstName = document.createElement("div");
@@ -85,21 +85,14 @@ export default function loadContact() {
     message.appendChild(messageLabel);
     message.appendChild(messageInput);
 
-    // Wrap names in a div
-    names.appendChild(firstName);
-    names.appendChild(lastName);
-
     const formItemArray = [firstName, lastName, email, message];
 
     for (let item of formItemArray) {
         item.className = "form-item";
+        form.appendChild(item);
     }
 
-    //form.appendChild(names);
-    form.appendChild(firstName);
-    form.appendChild(lastName);
-    form.appendChild(email);
-    form.appendChild(message);
+    form.appendChild(button);
 
     formContainer.appendChild(form);
 
