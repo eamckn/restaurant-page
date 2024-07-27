@@ -203,7 +203,7 @@ nav button:hover {
     text-align: center;
     line-height: 3rem;
 
-    animation: fadeInTranslucent ease 2s;
+    animation: fadeInTranslucent ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
