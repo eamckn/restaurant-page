@@ -196,7 +196,7 @@ nav button:hover {
     width: 40%;
     background-color: white;
 
-    padding: 2.5rem;
+    padding: 1.5rem;
     border-radius: 10px;
     border: .5rem solid orange;
     
@@ -206,11 +206,48 @@ nav button:hover {
     animation: fadeInTranslucent ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    overflow: scroll;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-item {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.form-item label {
+    font-family: "ichiraku text";
+}
+
+.form-item input,
+.form-item textarea {
+    padding: .5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-item:nth-child(1) label,
+.form-item:nth-child(2) label {
+    padding-right: 2rem;
+}
+
+.form-item:nth-child(3) label {
+    padding-right: .9rem;
+}
+
+.form-item input[type = "text"],
+.form-item input[type = "email"] {
+    height: 2rem;
+}
+
+.form-item:nth-child(4) {
+    display: flex;
+    flex-direction: column;
 }
 
 #footer {

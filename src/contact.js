@@ -8,6 +8,9 @@ export default function loadContact() {
     const form = document.createElement("form");
     form.setAttribute("id", "form");
 
+    const names = document.createElement("div");
+    names.setAttribute("id", "form-names")
+
     // Form elements
     const firstName = document.createElement("div");
     const firstNameLabel = document.createElement("label");
@@ -72,6 +75,8 @@ export default function loadContact() {
     messageRequired.setAttribute("aria-label", "required");
     messageInput.setAttribute("id", "message");
     messageInput.setAttribute("name", "user_message");
+    messageInput.setAttribute("rows", "10");
+    messageInput.setAttribute("cols", "40");
     // Form element content
     messageRequired.innerHTML = "*";
     messageLabel.innerHTML = "What would you like to say?"
@@ -80,12 +85,21 @@ export default function loadContact() {
     message.appendChild(messageLabel);
     message.appendChild(messageInput);
 
+    // Wrap names in a div
+    names.appendChild(firstName);
+    names.appendChild(lastName);
+
     const formItemArray = [firstName, lastName, email, message];
 
     for (let item of formItemArray) {
         item.className = "form-item";
-        form.appendChild(item);
     }
+
+    //form.appendChild(names);
+    form.appendChild(firstName);
+    form.appendChild(lastName);
+    form.appendChild(email);
+    form.appendChild(message);
 
     formContainer.appendChild(form);
 
