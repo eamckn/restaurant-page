@@ -2,15 +2,15 @@
 
 @font-face {
     font-family: 'ichiraku heading';
-    src: url('./fonts/japanrich-regular-webfont.woff') format('woff'),
-        url('./fonts/japanrich-regular-webfont.woff2') format('woff2');
+    src: url('./assets/fonts/japanrich-regular-webfont.woff') format('woff'),
+        url('./assets/fonts/japanrich-regular-webfont.woff2') format('woff2');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ichiraku text';
-    src: url('./fonts/yozakurajp-regular-webfont.woff') format('woff'),
-        url('./fonts/yozakurajp-regular-webfont.woff2') format('woff2');
+    src: url('./assets/fonts/yozakurajp-regular-webfont.woff') format('woff'),
+        url('./assets/fonts/yozakurajp-regular-webfont.woff2') format('woff2');
     font-style: normal;
 }
 
@@ -46,7 +46,7 @@ html {
 
 body {
     height: 100%;
-    background: no-repeat url('./ichiraku-outside.png');
+    background: no-repeat url('./assets/imgs/ichiraku-outside.png');
     background-size: cover;
     display: flex;
     flex-direction: column;

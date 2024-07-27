@@ -1,9 +1,9 @@
-import misoRamen from './menu-imgs/miso.png';
-import shioRamen from './menu-imgs/shio.png';
-import shoyuRamen from './menu-imgs/shoyu.png';
-import kimchiRamen from './menu-imgs/kimchi.png';
-import tsukemenRamen from './menu-imgs/tsukemen.png';
-import specialRamen from './menu-imgs/special.png';
+import misoRamen from './assets/imgs/miso.png';
+import shioRamen from './assets/imgs/shio.png';
+import shoyuRamen from './assets/imgs/shoyu.png';
+import kimchiRamen from './assets/imgs/kimchi.png';
+import tsukemenRamen from './assets/imgs/tsukemen.png';
+import specialRamen from './assets/imgs/special.png';
 
 
 export default function loadMenu() {
