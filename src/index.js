@@ -1,3 +1,6 @@
 import './style.css';
+import loadHome from './home.js'
 
-alert("Everything's bundled correctly! Cheers to that.");
+loadHome();
+
+//alert("Everything's bundled correctly! Cheers to that.");
