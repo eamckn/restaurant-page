@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: no-repeat url('./ichiraku-outside.png');
+    background-size: 100% auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
