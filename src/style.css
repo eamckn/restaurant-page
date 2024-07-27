@@ -31,7 +31,7 @@ html {
 body {
     height: 100%;
     background: no-repeat url('./ichiraku-outside.png');
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -75,6 +75,9 @@ nav button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: scroll;
+    padding: 2rem;
 }
 
 #welcome {
@@ -101,7 +104,6 @@ nav button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 2rem;
     gap: 2rem;
 }
 
@@ -130,6 +132,39 @@ nav button:hover {
     background-color: orange;
     padding: .25rem;
     text-align: center;
+}
+
+#about-grid {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 3fr;
+    gap: 2rem;
+}
+
+.bio-item#shop-bio {
+    grid-column: 1 / 4;
+}
+
+.bio-item {
+    width: 100%;
+    background-color: white;
+    opacity: .7;
+
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: .5rem solid orange;
+
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.bio-item h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 #footer {
