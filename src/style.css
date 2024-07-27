@@ -1,7 +1,18 @@
+
+
+@font-face {
+    font-family: 'ichiraku';
+    src: url('./japanrich-regular-webfont.woff') format('woff'),
+        url('./japanrich-regular-webfont.woff2') format('woff2');
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'ichiraku';
 }
 
 html {
@@ -11,12 +22,64 @@ html {
 body {
     height: 100%;
     background: no-repeat url('./ichiraku-outside.png');
-    background-size: 100% auto;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    background: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 6rem;
+    padding: 0 3rem 0 6rem;
+    font-size: 3.5rem;
+}
+
+nav {
+    width: 40%;
+
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+nav button:hover {
+    background-color: black;
+    opacity: .4;
+    color: white;
+}
+
+#content {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    width: 40%;
+    background-color: white;
+    opacity: .7;
+
+    padding: 2.5rem;
+    border-radius: 10px;
+    border: .5rem solid orange;
+
+    font-size: 1.15rem;
+    text-align: center;
+    line-height: 3rem;
 }
 
 #footer {
@@ -25,8 +88,6 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    height: 4rem;
     width: 100%;
 }
