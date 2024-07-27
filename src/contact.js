@@ -11,6 +11,11 @@ export default function loadContact() {
     const button = document.createElement("button");
     button.innerHTML = "Submit"
 
+    // While the form send any info currently
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
+
     // Form elements
     const firstName = document.createElement("div");
     const firstNameLabel = document.createElement("label");
