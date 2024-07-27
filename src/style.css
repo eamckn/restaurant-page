@@ -14,12 +14,21 @@
     font-style: normal;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInOpaque {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes fadeInTranslucent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .9;
     }
 }
 
@@ -83,7 +92,7 @@ nav button:hover {
     justify-content: center;
     align-items: center;
 
-    overflow: scroll;
+    overflow: auto;
     padding: 2rem;
 }
 
@@ -97,11 +106,11 @@ nav button:hover {
     border: .5rem solid orange;
 
     font-family: "ichiraku text";
-    font-size: 1.15rem;
+    font-size: 1.65rem;
     text-align: center;
     line-height: 3rem;
 
-    animation: fadeIn ease 3s;
+    animation: fadeInTranslucent ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -121,7 +130,7 @@ nav button:hover {
     align-items: center;
     justify-content: center;
 
-    animation: fadeIn ease 1s;
+    animation: fadeInOpaque ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -160,15 +169,19 @@ nav button:hover {
 .bio-item {
     width: 100%;
     background-color: white;
-    opacity: .7;
+    opacity: .8;
 
     padding: 1.5rem;
     border-radius: 10px;
     border: .5rem solid orange;
 
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 3rem;
+
+    animation: fadeInTranslucent ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .bio-item h2 {
@@ -186,7 +199,7 @@ nav button:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 4rem;
+    height: 3rem;
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
