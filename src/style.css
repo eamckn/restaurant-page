@@ -82,6 +82,27 @@ nav button:hover {
     line-height: 3rem;
 }
 
+#menu-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item img {
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+}
+
 #footer {
     background: black;
     display: flex;
