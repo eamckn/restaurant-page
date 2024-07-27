@@ -3,13 +3,13 @@ import loadHome from './home.js';
 import loadMenu from './menu.js';
 import loadAbout from './about.js';
 
-//loadHome();
-loadAbout();
+loadHome();
 
 const content = document.querySelector("#content");
 
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
+const aboutBtn = document.querySelector("#about");
 
 function clearContent() {
     while (content.firstChild) {
@@ -25,6 +25,11 @@ menuBtn.addEventListener('click', () => {
 homeBtn.addEventListener('click', () => {
     clearContent();
     loadHome();
+})
+
+aboutBtn.addEventListener('click', () => {
+    clearContent();
+    loadAbout();
 })
 
 //alert("Everything's bundled correctly! Cheers to that.");
