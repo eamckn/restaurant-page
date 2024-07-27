@@ -70,7 +70,7 @@ export default function loadMenu() {
     tsukemenItem.setAttribute("id", "tsukemen");
     tsukemenItem.appendChild(tsukemenImage);
     const tsukemenText = document.createElement("p");
-    tsukemenText.innerHTML = "Tsukemen Ramen";
+    tsukemenText.innerHTML = "Tsukemen";
     tsukemenItem.appendChild(tsukemenText);
 
     const specialItem = document.createElement("div");
@@ -78,7 +78,7 @@ export default function loadMenu() {
     specialItem.setAttribute("id", "special");
     specialItem.appendChild(specialImage);
     const specialText = document.createElement("p");
-    specialText.innerHTML = "Chef's Special Ramen";
+    specialText.innerHTML = "Chef's Special";
     specialItem.appendChild(specialText);
 
     let menu = [misoItem, shioItem, shoyuItem, kimchiItem, tsukemenItem, specialItem];
