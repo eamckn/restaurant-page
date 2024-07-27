@@ -1,6 +1,6 @@
 # restaurant-page
 
-The goal of this project was to get familiar with using webpack, bundling, coding within modules, and utilizing npm scripts. I had a lot of fun with this one, and while it took me a sec to ground myself with the webpack.config and package.json settings, I'm really happy with how I got through the development of the modules themselves and the overall look of the page! 
+The goal of this project was to get familiar with using webpack, bundling, coding within modules, and utilizing npm scripts. I had a lot of fun with this one, and while it took me a sec to ground myself with the webpack.config and package.json settings, I'm really happy with how quickly I got through the development of the modules themselves and the overall look of the page! 
 
 I ran into some issues at the end with my gitignore file and subtree branch, which hopefully explains the chunk of commits detailing what I was hoping to fix. After I unignored dist, I wanted to have later commits not track it, so I could continue updating. I realize now swapping back and forth between development and deployment is not a good idea, and something I should avoid if possible. I attemped to untrack dist, make more commits, then commit those changes to my repository and to the subtree branch that my page was being deployed from, but ran into a slew of errors. After some effort, I deleted the gh-pages branch my page was being deployed from, made sure all my changes were pushed to main, unignored dist from gitignore, and successfully got my page back to looking as intended.
 
